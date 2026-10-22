@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anatomy of an mRNA lipid nanoparticle</title>
+  <meta name="description" content="A 34-second schematic of lipid nanoparticle mRNA delivery: circulation, equatorial section, endosomal escape, ribosomal translation, and membrane antigen display." />
+  <link rel="canonical" href="https://mizcausevic-dev.github.io/lnp-mrna-anatomy/" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0f19;
+      --panel: #141a27;
+      --line: rgba(244, 241, 234, 0.14);
+      --text: #f4f1ea;
+      --muted: #9aa6b8;
+      --mint: #00f5d4;
+      --violet: #9d4edd;
+      --amber: #ffb703;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, "Liberation Sans", sans-serif;
+    }
+    header, main { width: min(1100px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 36px 0 18px; }
+    .kicker {
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      letter-spacing: 0.22em;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    h1 { font-size: clamp(32px, 5vw, 56px); line-height: 0.95; letter-spacing: -0.035em; margin: 10px 0 12px; }
+    .dek { max-width: 68ch; color: #c9d0da; font-size: 18px; line-height: 1.45; }
+    video {
+      width: 100%;
+      background: #000;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    .row { display: flex; gap: 18px; flex-wrap: wrap; margin: 14px 0 28px; color: var(--muted); font-size: 13px; letter-spacing: 0.04em; }
+    .swatch { display: inline-flex; align-items: center; gap: 8px; }
+    .dot { width: 10px; height: 10px; border-radius: 99px; display: inline-block; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 36px; font-size: 15px; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--muted); font-weight: 600; font-size: 12px; letter-spacing: 0.12em; }
+    a { color: var(--mint); }
+    footer { color: var(--muted); font-size: 13px; padding-bottom: 48px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="kicker">SCHEMATIC · NOT TO SCALE · 34.0s · 30 FPS</div>
+    <h1>Anatomy of an mRNA lipid nanoparticle</h1>
+    <p class="dek">One particle, from circulation to a membrane-anchored antigen. The film compresses endocytosis, endosomal acidification, ribosomal decoding, and surface display. It is not a measurement and it is not a scale model.</p>
+  </header>
+  <main>
+    <video controls playsinline preload="metadata" poster="">
+      <source src="./lnp-mrna-delivery-Cursor.mp4" type="video/mp4" />
+    </video>
+    <div class="row">
+      <span class="swatch"><i class="dot" style="background:var(--mint)"></i> Ionizable lipid</span>
+      <span class="swatch"><i class="dot" style="background:var(--violet)"></i> mRNA</span>
+      <span class="swatch"><i class="dot" style="background:var(--amber)"></i> Ribosome / antigen</span>
+      <span>1920×1080 · H.264</span>
+    </div>
+    <table>
+      <thead>
+        <tr><th>TIME</th><th>BEAT</th><th>WHAT IT STANDS IN FOR</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0:00–0:05</td><td>Circulation</td><td>PEG-lipid chains move on the shell. The particle stays intact.</td></tr>
+        <tr><td>0:05–0:10</td><td>Equatorial section</td><td>The ionizable envelope opens. A coiled mRNA strand is visible. The rings are a viewing jig, not biology.</td></tr>
+        <tr><td>0:10–0:17</td><td>Endosomal escape</td><td>The membrane cups the particle. A schematic pH bar falls. The vesicle opens.</td></tr>
+        <tr><td>0:17–0:25</td><td>Decoding</td><td>The strand feeds a ribosome. A nascent peptide lengthens, then compacts.</td></tr>
+        <tr><td>0:25–0:34</td><td>Surface antigen</td><td>Folded protein anchors on the outer membrane. Secretory trafficking is not drawn.</td></tr>
+      </tbody>
+    </table>
+    <footer>
+      <p>Source and essay: <a href="https://github.com/mizcausevic-dev/lnp-mrna-anatomy">mizcausevic-dev/lnp-mrna-anatomy</a>. The mechanism notes live in <code>medium/anatomy-of-an-mrna-lipid-nanoparticle-Cursor.md</code>.</p>
+      <p>A transmembrane antigen is translated at the endoplasmic reticulum and trafficked through the Golgi. This preview shows destination, not that route.</p>
+    </footer>
+  </main>
+</body>
+</html>
