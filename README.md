@@ -31,6 +31,8 @@ npm run render
 
 Output: `out/lnp-mrna-delivery-Cursor.mp4`.
 
+The checked encode of this cut is H.264, 1920×1080, 30 fps, 1,020 frames, 34.000 seconds.
+
 `remotion.config.ts` uses SwiftShader and `/usr/local/bin/google-chrome` only when that binary exists. On a GPU machine, Remotion's own browser is used.
 
 ## Topics
